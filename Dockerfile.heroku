@@ -1,11 +1,11 @@
 FROM vital987/code-server
 
-LABEL AboutImage "Ubuntu20.04_VS-Code-Server_SubImage"
+LABEL AboutImage "Debian:10_VS-Code-Server_SubImage"
 
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 
 #Code-Server Version
-ENV	CS_VERSION=3.10.2 \
+ENV	CS_VERSION=3.11.0 \
 #Code-Server login type: {password, none}
 	AUTH_TYPE="password" \
 #Code-Server login password (If AUTH_TYPE=password)
@@ -31,4 +31,4 @@ ENV	CS_VERSION=3.10.2 \
 	LANGUAGE=en_US.UTF-8 \
 	LC_ALL=C.UTF-8
 
-ADD $DRIVE_ACCESS_URL $CUSTOM_HOME/.credentials/drive-access.json
+# ADD $DRIVE_ACCESS_URL $CUSTOM_HOME/.credentials/drive-access.json

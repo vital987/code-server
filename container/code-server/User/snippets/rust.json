@@ -1,0 +1,11 @@
+{
+  "Rust Boilerplate": {
+    "prefix": "boilerplate",
+    "body": [
+      "fn main() {",
+      "    ${1:Main Code}",
+      "}"
+    ],
+    "description": "Rust Boilerplate"
+  }
+}

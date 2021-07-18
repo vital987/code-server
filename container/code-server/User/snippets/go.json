@@ -1,0 +1,14 @@
+{
+  "Go Boilerplate": {
+    "prefix": "boilerplate",
+    "body": [
+      "package main",
+      "import \"fmt\"",
+      "func main() {",
+      "  //Code Here",
+      "  $1",
+      "}"
+    ],
+    "description": "Go Boilerplate"
+  }
+}

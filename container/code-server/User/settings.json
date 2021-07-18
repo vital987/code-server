@@ -2,21 +2,19 @@
     "workbench.iconTheme": "material-icon-theme",
     "gitlens.showWhatsNewAfterUpgrades": false,
     "actionButtons": {
-
-    
         "defaultColor": "#1e90ff", // Can also use string color names.
-        "loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
-        "reloadButton":"", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+        "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
+        "reloadButton": "", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
         "commands": [
             {
-                "cwd": "/app/WORKSPACE",     // Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "cwd": "/app/WORKSPACE", // Terminal initial folder ${workspaceFolder} and os user home as defaults
                 "name": "ResetWorkspace",
                 "color": "#1e90ff",
                 "singleInstance": true,
                 "command": "rm -rf /app/WORKSPACE/* && cp -r /app/workspace.bak/* /app/WORKSPACE/ && exit", // This is executed in the terminal.
             },
             {
-                "cwd": "/app/WORKSPACE",     // Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "cwd": "/app/WORKSPACE", // Terminal initial folder ${workspaceFolder} and os user home as defaults
                 "name": "ClearWorkspace",
                 "color": "#1e90ff",
                 "singleInstance": true,
@@ -24,15 +22,12 @@
             }
         ]
     },
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Default Dark+",
     "code-runner.enableAppInsights": false,
     "code-runner.executorMapByFileExtension": {
         ".raku": "clear && perl6"
     },
     "code-runner.executorMap": {
-
-
-
         "javascript": "clear && node",
         "java": "clear && cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -131,9 +126,7 @@
         }
     ],
     "editor.fontFamily": "'Fira Code'",
-    "yaml.customTags": [
-    
-    ], 
+    "yaml.customTags": [],
     "terminal.integrated.fontFamily": "\"consolas\"",
     "browser-preview.startUrl": "https://github.com/vital987",
     "browser-preview.chromeExecutable": "brave-browser",
