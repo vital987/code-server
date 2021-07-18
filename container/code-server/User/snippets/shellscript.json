@@ -1,0 +1,11 @@
+{
+  "ShellScript Boilerplace": {
+    "prefix": "boilerplate",
+    "body": [
+      "#!/bin/bash",
+      "$1",
+      "}"
+    ],
+    "description": "ShellScript Boilerplate"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "C++ Boilerplace": {
+    "prefix": "boilerplate",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "int main () {",
+      "  ${1:Main Code}",
+      "return 0;",
+      "}"
+    ],
+    "description": "C++ Boilerplate"
+  }
+}
