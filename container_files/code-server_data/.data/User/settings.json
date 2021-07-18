@@ -1,0 +1,140 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "actionButtons": {
+
+    
+        "defaultColor": "#1e90ff", // Can also use string color names.
+        "loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
+        "reloadButton":"", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+        "commands": [
+            {
+                "cwd": "/app/WORKSPACE",     // Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "name": "ResetWorkspace",
+                "color": "#1e90ff",
+                "singleInstance": true,
+                "command": "rm -rf /app/WORKSPACE/* && cp -r /app/workspace.bak/* /app/WORKSPACE/ && exit", // This is executed in the terminal.
+            },
+            {
+                "cwd": "/app/WORKSPACE",     // Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "name": "ClearWorkspace",
+                "color": "#1e90ff",
+                "singleInstance": true,
+                "command": "rm -rf /app/WORKSPACE/* && exit", // This is executed in the terminal.
+            }
+        ]
+    },
+    "workbench.colorTheme": "Atom One Dark",
+    "code-runner.enableAppInsights": false,
+    "code-runner.executorMapByFileExtension": {
+        ".raku": "clear && perl6"
+    },
+    "code-runner.executorMap": {
+
+
+
+        "javascript": "clear && node",
+        "java": "clear && cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "clear && cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "clear && php",
+        "python": "clear && python -u",
+        "perl": "clear && perl",
+        "perl6": "clear && perl6",
+        "ruby": "clear && ruby",
+        "go": "clear && go run",
+        "lua": "clear && lua5.3",
+        "groovy": "clear && groovy",
+        "powershell": "clear && pwsh -ExecutionPolicy ByPass -File",
+        "bat": "clear && cmd /c",
+        "shellscript": "clear && bash",
+        "fsharp": "clear && fsi",
+        "csharp": "clear && mcs -out:/app/WORKSPACE/C#/$fileNameWithoutExt.exe /app/WORKSPACE/C#/$fileName && mono /app/WORKSPACE/C#/$fileNameWithoutExt.exe",
+        "vbscript": "clear && cscript //Nologo",
+        "typescript": "clear && ts-node",
+        "coffeescript": "clear && coffee",
+        "scala": "clear && scala",
+        "swift": "clear && swift",
+        "julia": "clear && julia",
+        "crystal": "clear && crystal",
+        "ocaml": "clear && ocaml",
+        "r": "clear && Rscript",
+        "raku": "clear && perl6",
+        "applescript": "clear && osascript",
+        "clojure": "clear && clojure",
+        "haxe": "clear && haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "clear && cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "clear && racket",
+        "scheme": "clear && csi -script",
+        "ahk": "clear && autohotkey",
+        "autoit": "clear && autoit3",
+        "dart": "clear && dart",
+        "pascal": "clear && cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "clear && cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "clear && runhaskell",
+        "nim": "clear && nim compile --verbosity:0 --hints:off --run",
+        "lisp": "clear && sbcl --script",
+        "kit": "clear && kitc --run",
+        "v": "clear && v run",
+        "sass": "clear && sass --style expanded",
+        "scss": "clear && scss --style expanded"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.saveFileBeforeRun": true,
+    "csharp.suppressDotnetInstallWarning": true,
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/gdrive_upload": true,
+        "**/workspace.bak": true,
+        "**/zips": true,
+        "**/client_secret.json": true,
+        "**/requirements.txt": true,
+        "**/UPLOAD": true,
+        "**/upload.py": true,
+        "**/zip.py": true,
+        "**/.wh.*": true,
+        "**/.ngrok_install.sh": true,
+        "**/.git": true,
+        "**/.profile": true,
+        "**/.bashrc": true,
+        "**/.zshrc": true,
+        "**/.bash_history": true,
+        "**/.extensions": true,
+        "**/.data": true,
+        "**/.credentials": true,
+        "**/.gnupg": true,
+        "**/.local": true,
+        "**/.wget-hsts": true,
+        "**/.anydesk": true,
+        "**/.vim": true,
+        "**/.vnc": true,
+        "**/.motd_shown": true,
+        "**/.cache": true,
+        "**/.Xauthority": true,
+        "**/.fluxbox": true,
+        "**/.hushlogin": true,
+        "**/.xsession-errors": true,
+        "**/.profile.d": true,
+        "**/.fehbg": true,
+        "**/.viminfo": true,
+        "**/.factorypath": true
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "editor.fontFamily": "'Fira Code'",
+    "yaml.customTags": [
+    
+    ], 
+    "terminal.integrated.fontFamily": "\"consolas\"",
+    "browser-preview.startUrl": "https://github.com/vital987",
+    "browser-preview.chromeExecutable": "brave-browser",
+}

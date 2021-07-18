@@ -1,0 +1,34 @@
+FROM vital987/code-server
+
+LABEL AboutImage "Ubuntu20.04_VS-Code-Server_SubImage"
+
+LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
+
+#Code-Server Version
+ENV	CS_VERSION=3.10.2 \
+#Code-Server login type: {password, none}
+	AUTH_TYPE="password" \
+#Code-Server login password (If AUTH_TYPE=password)
+	PASSWORD="samplepass" \
+#Code-Server access port
+	CODESERVER_PORT=$PORT \
+#Custom Home Directory for Heroku
+	CUSTOM_HOME="/app" \
+#File drive-access.json URL
+	DRIVE_ACCESS_URL="https://bashupload.com/SIumi/a.json" \
+#Home Directory
+	HOME=$CUSTOM_HOME \
+#Workspace Directory
+	WORKSPACE_DIR=$CUSTOM_HOME"/WORKSPACE" \
+#Ngrok Port Forwarder Token
+	NGROK_TOKEN="1tLI5XxmWy9UHmolHDVvxmgOwvU_4qG9dbxDayGJSyuEiq3A1" \
+#System Path Variable
+	PATH=$PATH":/usr/local/go/bin" \
+#Timezone
+	TZ="Asia/Kolkata" \
+#Locales
+	LANG=en_US.UTF-8 \
+	LANGUAGE=en_US.UTF-8 \
+	LC_ALL=C.UTF-8
+
+ADD $DRIVE_ACCESS_URL $CUSTOM_HOME/.credentials/drive-access.json

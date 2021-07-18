@@ -1,0 +1,19 @@
+{
+    "name": "Code-Server",
+    "description": "Code-Server with code-ready environment & google drive file saving.",
+    "repository": "https://github.com/vital987/code-server.git",
+    "logo": "https://raw.githubusercontent.com/vital987/code-server/master/assets/icon-dark.png",
+    "keywords": ["docker", "code-server", "coder", "cdr", "c", "clojure", "cpp", "csharp", "go", "java", "js", "javascript", "lua", "perl", "perl6","powershell", "python", "r", "raku", "ruby", "shellscript", "scala", "swift", "bash", "ubuntu", "focal", "20.04", "remote", "vscode", "visual-studio", "vscode-server"],
+    "stack": "container",
+    "env": {
+      "AUTH_TYPE" : {
+        "description": "Code-Server login type: {password, none}",
+	      "value" : "password",
+        "required" : true
+      } ,
+      "PASSWORD": {
+        "description": "Code-Server login password (If AUTH_TYPE=password), default: samplepass",
+        "required" : false
+      }
+    } 
+  }
