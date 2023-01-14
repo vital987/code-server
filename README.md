@@ -52,14 +52,9 @@
 * **For Non-Heroku Users :**
     Edit & Run Command :
       ```
-      docker run --name code-server \
-      -e AUTH_TYPE="password" \
-      -e PASSWORD="samplepass" \
-      -e CODESERVER_PORT="9870" \
-      -e NGROK_TOKEN="<YOUR NGROK TOKEN>" \
-      -d -p 8080:9870 vital987/code-server && \
+      docker run --name code-server -e AUTH_TYPE="password" -e PASSWORD="samplepass" -e CODESERVER_PORT="9870" -e NGROK_TOKEN="<YOUR NGROK TOKEN>" -d -p 8080:9870 vital987/code-server
       ```
-      [ ! ] Set ```AUTH_TYPE``` value to ```none``` if you dont want any login password prompt.
+* [ ! ] Set ```AUTH_TYPE``` value to ```none``` if you dont want any login password prompt.
 
 ## **Usage :**
   * Open the heroku app URL, non-heroku users, port-forward the <HOST HTTP PORT> using Ngrok: ```ngrok http $CODESERVER_PORT```
